@@ -1,0 +1,14 @@
+// Top Components 
+@import './components/variables';
+@import './components/nav';
+@import'./components/utilities';
+
+// Main Components
+@import'./components/featured';
+@import'./components/categories';
+@import'./components/albums';
+
+
+// Bottom Components
+
+@import'./components/footer-nav';

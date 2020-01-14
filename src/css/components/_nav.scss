@@ -1,0 +1,34 @@
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5625rem;
+
+    .nav-list__item {
+        font-family: $font;
+        list-style: none;
+
+        .nav-list__link {
+            text-decoration: none;
+            color: $primary-color;
+
+            .nav-list__arrow {
+                width: 8.58px;
+                height: 15px;
+            }
+
+            .nav-list__heading {
+                font-size: 0.9em;
+                font-weight: lighter;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+            }
+
+            .nav-list__search {
+                width: 1.2em;
+                height: 1.2em;
+            }
+        }
+
+    }
+}

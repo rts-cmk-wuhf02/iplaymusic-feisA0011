@@ -1,0 +1,86 @@
+.albums-page {
+    margin: $page-margin;
+    font-family: $font;
+
+    .featured-albums-text-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 1.2em 0;
+
+        .featured-albums-sub-heading {
+            font-size: 15px;
+            color: $primary-color;
+
+        }
+
+        .view-all {
+            text-decoration: none;
+            color: #FF1168;
+            font-size: 15px;
+
+        }
+    }
+
+
+    .img-list {
+        display: flex;
+        list-style: none;
+        overflow: hidden;
+
+        .img-list__item {
+            padding-right: 15px;
+
+            .img-list__img {
+                border-radius: 8px;
+            }
+
+        }
+    }
+
+    .new-releases-text-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0 1.2rem 0;
+
+        .featured-albums-sub-heading {
+            font-size: 15px;
+            color: $primary-color;
+
+        }
+
+        .view-all {
+            text-decoration: none;
+            color: #FF1168;
+            font-size: 15px;
+
+        }
+    }
+
+    .song-list {
+        list-style: none;
+
+
+        .song-list__items {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 18px;
+            margin: 0 0 1.5rem;
+
+            .song-list__img {
+                border-radius: 4px;
+            }
+
+            .song-list__song-text {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                grid-template-rows: 1fr 1fr;
+
+                .song-list__song- {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
