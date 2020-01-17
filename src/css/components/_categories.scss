@@ -1,41 +1,45 @@
-.category-list {
-    //margin: 1.5625rem 1.5625rem 5rem;
-    margin: $page-margin;
-    list-style: none;
-    font-family: $font;
+.category-page {
 
+    padding: $page-margin;
 
-
-    .genre-container {
-        display: flex;
-        background-color: #E54028;
-        justify-content: space-between;
-        align-items: center;
-        font-size: $text-font;
-        padding: 1.0625rem 1.5rem;
-        margin: 1rem 0;
-        border-radius: 8px;
-        color: #fff;
-        font-weight: bold;
-        text-transform: capitalize;
-        letter-spacing: 2px;
-
-    }
-
-    .sub-genre-list {
-        margin: 1.6rem;
+    .category-list {
+        //margin: 1.5625rem 1.5625rem 5rem;
         list-style: none;
+        font-family: $font;
 
-        .sub-genre-container {
+
+
+        .genre-container {
             display: flex;
+            background-color: #E54028;
             justify-content: space-between;
+            align-items: center;
+            font-size: $text-font;
+            padding: 1.0625rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 2px;
 
-            .sub-genre-list__text {
-                font-size: 15px;
-                font-weight: 300;
-                text-transform: capitalize;
-                letter-spacing: 2px;
+        }
 
+        .sub-genre-list {
+            margin: 1.6rem;
+            list-style: none;
+
+            .sub-genre-container {
+                display: flex;
+                justify-content: space-between;
+
+                .sub-genre-list__text {
+                    font-size: 15px;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    letter-spacing: 2px;
+
+                }
             }
         }
     }

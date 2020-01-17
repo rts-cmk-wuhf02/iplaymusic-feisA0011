@@ -1,0 +1,144 @@
+.albumDetails-page {
+    font-family: $font;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5rem;
+
+    .albumDetails-showcase {
+        position: relative;
+
+        .albumDetails__text-container {
+            padding: 0 1.625rem;
+            -padding: $view-margin;
+            color: #fff;
+
+            .albumDetails__heading {
+                position: absolute;
+                top: 5.1875rem;
+                font-size: 2.25rem;
+
+            }
+
+            .albumDetails__numOfTracks {
+                position: absolute;
+                top: 7.4375rem;
+                font-size: 15px;
+
+            }
+
+            .albumDetails-hashtags {
+                position: absolute;
+                top: 17.4375rem;
+
+                .genre-hashtag-heading {
+                    font-weight: 100;
+                    padding: 17px 0;
+                }
+
+                .hashtags {
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    gap: 17px;
+
+                    .first-hashtag {
+
+                        height: 41px;
+                        background-color: #FF1168;
+                        padding: 0.6em;
+                        border-radius: 20px;
+                        -text-align: center;
+                        -place-self: center;
+                        display: flex;
+                        align-self: center;
+                        color: #fff;
+                        font-size: 15px;
+                        text-decoration: none;
+                        font-weight: 500;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .track-list-section {
+        padding: 2.25rem 1.625rem 0;
+
+        .track-list {
+            list-style: none;
+
+            .track-list__items {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 18px;
+                margin: 0 0 1.5rem;
+
+                .track-list__track-text {
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    grid-template-rows: 1fr 1fr;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// .albumDetails-page {
+//     -padding: $view-margin;
+//     -padding: $page-margin;
+//     font-family: $font;
+//     position: relative;
+//     overflow: hidden;
+
+//     .albumDetails-showcase {
+//         position: relative;
+
+//         .albumDetails-showcase__img {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             z-index: -1;
+//         }
+
+//         .albumDetails__text-container {
+//             position: absolute;
+//             top: 5.1875rem;
+//             padding: 0 0 0 $view-margin;
+//             color: #fff;
+
+//             .albumDetails__heading {
+//                 font-size: 2.25em;
+//                 text-transform: capitalize;
+//                 padding-bottom: 20px;
+
+//             }
+
+//             .albumDetails__numOfTracks {
+//                 font-size: 15px;
+//                 text-transform: capitalize;
+
+//             }
+
+//             .albumDetails-hashtags {
+//                 position: relative;
+
+//                 .genre-hashtag-heading {
+//                     position: absolute;
+//                     top: 7.1875rem;
+//                     font-weight: 100;
+//                 }
+
+//                 .hashtags {
+//                     position: absolute;
+//                     top: 9rem;
+//                 }
+
+//             }
+//         }
+//     }
+// }
