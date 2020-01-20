@@ -1,3 +1,75 @@
 .player-page {
-    height: 812px;
+    -height: 107vh;
+    width: 100vw;
+    background: url('https://via.placeholder.com/1200x1000');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 0 25px;
+    font-family: $font;
+
+    .avatar {
+
+        .avatar-img {
+            margin: 10.9375rem 3.125rem 4.1875rem;
+
+            width: 225px;
+            height: 225px;
+            border-radius: 50%;
+
+
+        }
+    }
+
+    .player {
+
+        .player__song-info {
+            text-align: center;
+            color: #ffffff;
+            padding: 1rem;
+
+            .player__song-name {
+                font-size: 1.25rem;
+                padding: 1rem;
+            }
+
+            .player__artist-name {
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+        .player-tools {
+            .progress-bar__bar {
+                margin: 1rem 0;
+                border: 2px solid #FF1168;
+                position: relative;
+
+                .progress__dot {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background-color: #FF1168;
+                    border-radius: 50%;
+                    top: -5px;
+                    left: 50px;
+                }
+            }
+
+            .progress-bar__time-frame {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .player-tools__btn {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                place-items: center;
+                gap: 2.25rem;
+                padding: 1rem 0 2rem;
+            }
+        }
+    }
+
+
 }
