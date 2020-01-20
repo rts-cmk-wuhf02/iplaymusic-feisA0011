@@ -1,0 +1,123 @@
+.playlist-page {
+    font-family: $font;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    background: url('/assets/images/sound-wave.svg');
+    background-repeat: no-repeat;
+    background-attachment: local;
+    -background-position: top;
+
+    .playlist-showcase {
+        .playlist-heading {
+            padding: 5.9375rem 1.5625rem 1rem;
+            color: #fff;
+            font-size: 2.25rem;
+            text-transform: capitalize;
+
+        }
+
+        .slider {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 3.4375rem;
+            padding-bottom: 1rem;
+            place-content: center;
+
+            .slider-img {
+                border-radius: 4px;
+            }
+
+            .slider-img:first-child,
+            :last-child {
+                width: 100px;
+                height: 100px;
+                border-radius: 4px;
+                place-self: center;
+            }
+        }
+
+        .playlist-genre {
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+
+    .play-list-section {
+        .play-list {
+            padding: 2.25rem 1.625rem 0;
+            list-style: none;
+
+            .play-list__items {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 18px;
+                margin: 0 0 1.5rem;
+
+                .play-list__img-bg {
+                    width: 30px;
+                    height: 30px;
+                    background: linear-gradient(90deg, rgba(238, 9, 121, 1) 0%, rgba(255, 106, 0, 1) 100%);
+                    border-radius: 50%;
+                    place-self: center;
+
+                    .play-list__img {
+                        padding: 10px 12px;
+                    }
+                }
+
+                .play-list__play-text {
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    grid-template-rows: 1fr 1fr;
+
+                    .play-list__play-name {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $primary-color;
+                    }
+
+                    .play-list__play-artist {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                        font-weight: 100;
+                        color: $primary-color;
+                        grid-column: 1;
+                        grid-row: 2;
+                        align-self: end;
+
+                    }
+
+                    .play-list__numOfPlays {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                        font-weight: 100;
+                        color: $primary-color;
+                        place-self: center;
+                        grid-column: 2;
+                        grid-row: span 2;
+                    }
+                }
+            }
+        }
+
+        .listenToAll {
+            text-align: center;
+
+            margin: 3rem 0 2rem;
+
+            .listen-link {
+                border: 3px solid;
+                border-radius: 50px;
+                text-decoration: none;
+                color: #FF1168;
+                text-transform: capitalize;
+                padding: 1rem 6.875rem;
+            }
+        }
+    }
+}
