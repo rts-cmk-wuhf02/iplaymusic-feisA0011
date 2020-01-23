@@ -5,7 +5,7 @@
     <article class="category-page">
         <h1 class="page-heading">Categories</h1>
         <ul class="category-list">
-            <li class="category-list__item">
+            <!-- <li class="category-list__item">
                 <div class="genre-container">
                     <p class="genre-heading">Alternative</p>
                     <div>
@@ -157,11 +157,23 @@
                         <img class='more' src="/assets/images/ionmore.svg" alt="more">
                     </div>
                 </div>
-            </li>
+            </li> -->
 
         </ul>
 
     </article>
 </main>
+<template id="category-template">
+    <li class="category-list__item">
+        <div class="genre-container">
+            <p class="genre-heading"></p>
+            <div>
+                <img class='more' src="/assets/images/ionmore.svg" alt="more">
+            </div>
+        </div>
+    </li>
+</template>
+
 <%- include("../partials/footer-nav.ejs") %>
 <%- include("../partials/after-footer.ejs") %>
+<script src="/assets/javascript/categoryPage.js"></script>

@@ -1,8 +1,21 @@
 {
   "name": "iplaymusic-feisa0011",
   "version": "1.0.0",
-  "description": "iPlayMusic app",
+  "description": "Opgaven går ud på at opsætte et website der primært er mobiltvenligt, og er drevet af en simpel datastruktur.\r Opgaven er tiltænkt som en **individuel opgave**, men I må selvfølgelig gerne vende ideer og koncepter med hinanden.",
   "main": "gulpfile.js",
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-ejs": "^5.0.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp dev"
@@ -16,17 +29,5 @@
   "bugs": {
     "url": "https://github.com/rts-cmk-wuhf02/iplaymusic-feisA0011/issues"
   },
-  "homepage": "https://github.com/rts-cmk-wuhf02/iplaymusic-feisA0011#readme",
-  "dependencies": {
-    "@babel/core": "^7.8.0",
-    "@babel/preset-env": "^7.8.2",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-connect": "^5.7.0",
-    "gulp-ejs": "^5.0.0",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
-    "nodemon": "^2.0.2"
-  }
+  "homepage": "https://github.com/rts-cmk-wuhf02/iplaymusic-feisA0011#readme"
 }

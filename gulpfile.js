@@ -48,9 +48,9 @@ function watchScss() {
 
 function babelJs(done) {
     gulp.src('./src/javascript/**/*.js')
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
+        // .pipe(babel({
+        //     presets: ['@babel/env']
+        // }))
         .pipe(gulp.dest("./dist/assets/javascript"))
 
         .pipe(connect.reload())

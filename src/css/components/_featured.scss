@@ -1,6 +1,7 @@
 .featured-page {
 
     padding: $page-margin;
+    font-family: $font;
 
     .page-heading {}
 
@@ -20,6 +21,8 @@
                 position: relative;
                 border-radius: 8px;
                 display: block;
+                width: 100%;
+                height: 100%;
 
             }
 
@@ -34,11 +37,13 @@
                 font-size: 2rem;
                 word-break: break-word;
                 margin: 0 0 0.5em 0;
+                color: #fff;
             }
 
             .featured-list__sub-heading {
                 padding: 0 0 0 1.1875rem;
                 font-size: 0.75rem;
+                color: #fff;
 
             }
         }

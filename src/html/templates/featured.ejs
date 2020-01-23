@@ -6,24 +6,35 @@
     <article class="featured-page">
         <h1 class="page-heading">Featured</h1>
         <ul class="featured-list">
-            <li class="featured-list__item">
+            <!-- <li class="featured-list__item">
                 <img class="featured-list__img" src="https://via.placeholder.com/325x425" alt="placeholder">
                 <div class="featured-list__text-container">
                     <h2 class="featured-list__heading">placeholder heading</h2>
                     <h3 class="featured-list__sub-heading">placeholder subheading</h3>
                 </div>
-            </li>
-            <li class="featured-list__item">
+            </li> -->
+            <!-- <li class="featured-list__item">
                 <img class="featured-list__img" src="https://via.placeholder.com/325x425" alt="placeholder">
                 <div class="featured-list__text-container">
                     <h2 class="featured-list__heading">placeholder heading</h2>
                     <h3 class="featured-list__sub-heading">placeholder subheading</h3>
 
                 </div>
-            </li>
+            </li> -->
 
         </ul>
     </article>
 </main>
+<template id="featured-template">
+    <li class="featured-list__item">
+        <img class="featured-list__img" src="https://via.placeholder.com/325x425" alt="placeholder">
+        <div class="featured-list__text-container">
+            <h2 class="featured-list__heading"></h2>
+            <h3 class="featured-list__sub-heading"></h3>
+        </div>
+    </li>
+</template>
+<!-- <script src="/assets/javascript/main.js"></script> -->
 <%- include("../partials/footer-nav.ejs") %>
 <%- include("../partials/after-footer.ejs") %>
+<script src="/assets/javascript/featuredPage.js"></script>

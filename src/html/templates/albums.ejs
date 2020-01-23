@@ -13,12 +13,12 @@
             </article>
             <article class="album-covers">
                 <ul class="img-list">
-                    <li class="img-list__item"> <img class="img-list__img" src="https://via.placeholder.com/130x130"
+                    <!-- <li class="img-list__item"> <img class="img-list__img" src="https://via.placeholder.com/130x130"
                             alt="placeholder"></li>
                     <li class="img-list__item"> <img class="img-list__img" src="https://via.placeholder.com/130x130"
                             alt="placeholder"></li>
                     <li class="img-list__item"> <img class="img-list__img" src="https://via.placeholder.com/130x130"
-                            alt="placeholder"></li>
+                            alt="placeholder"></li> -->
 
                 </ul>
             </article>
@@ -30,7 +30,7 @@
                 <a href="" class="view-all">View All</a>
             </article>
             <ul class="song-list">
-                <li class="song-list__items">
+                <!-- <li class="song-list__items">
                     <img class="song-list__img" src="https://via.placeholder.com/50x50" alt=""
                         class="song-list__song-cover">
                     <article class="song-list__song-text">
@@ -56,12 +56,30 @@
                         <a class="song-list__song-artist" href="">Artist</a>
                         <a class="song-list__songs" href="">11 songs</a>
                     </article>
-                </li>
+                </li> -->
             </ul>
 
         </section>
     </article>
 
 </main>
+<template id="albumTemplate">
+    <li class="img-list__item"> <img class="img-list__img" src="https://via.placeholder.com/130x130" alt="placeholder">
+    </li>
+
+</template>
+
+<template id='songListTemplate'>
+    <li class="song-list__items">
+        <img class="song-list__img" src="https://via.placeholder.com/50x50" alt="" class="song-list__song-cover">
+        <article class="song-list__song-text">
+            <a class="song-list__song-name" href="">Song name</a>
+            <a class="song-list__song-artist" href="">Artist</a>
+            <a class="song-list__songs" href="">12 songs</a>
+        </article>
+    </li>
+</template>
+
 <%- include("../partials/footer-nav.ejs") %>
 <%- include("../partials/after-footer.ejs") %>
+<script src="/assets/javascript/albums.js"></script>
