@@ -22,11 +22,17 @@
 
                 .nav-list__link {
                     text-decoration: none;
-                    color: $primary-color;
+                    color: var(--secondary-color);
 
                     .nav-list__arrow {
                         width: 8.58px;
                         height: 15px;
+
+                        #arrow-back {
+                            fill: var(--secondary-color);
+
+                        }
+
                     }
 
                     .nav-list__heading {
@@ -39,6 +45,11 @@
                     .nav-list__search {
                         width: 1.2em;
                         height: 1.2em;
+
+                        #search {
+                            fill: var(--secondary-color);
+
+                        }
                     }
                 }
 

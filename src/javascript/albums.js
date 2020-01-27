@@ -1,6 +1,7 @@
 function generatePage() {
+    console.log(data)
     data.albums.items.forEach(element => {
-        console.log(element)
+        //console.log(element)
         //Image list vars
         const albumsTemplate = document.getElementById('albumTemplate')
         const container = document.querySelector('.img-list')

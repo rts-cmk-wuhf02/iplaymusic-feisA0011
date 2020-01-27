@@ -10,6 +10,19 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
-    background: #ffffff;
+    height: 65px;
+    background: var(--primary-color);
     overflow: hidden;
+
+    .footer-list__item:nth-child(3) {
+        width: 45px;
+        height: 45px;
+        background: linear-gradient(90deg, rgba(238, 9, 121, 1) 0%, rgba(255, 106, 0, 1) 100%);
+        background-position: center;
+        border-radius: 50%;
+
+        .signal-icon {
+            margin: 0.55rem;
+        }
+    }
 }

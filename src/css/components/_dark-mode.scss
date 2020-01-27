@@ -1,0 +1,13 @@
+html {
+    --primary-color: #fff;
+    --secondary-color: #{$primary-color};
+    --footer-bg: #fff;
+    --font-color: #{$primary-color};
+}
+
+html[data-theme='dark'] {
+    --primary-color: #{$primary-color};
+    --secondary-color: #fff;
+    --footer-bg: #{$primary-color};
+    --font-color: #fff;
+}

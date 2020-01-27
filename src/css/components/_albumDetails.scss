@@ -66,6 +66,10 @@
     .track-list-section {
         padding: 2.25rem 1.625rem 0;
 
+        .track-list__sub-heading {
+            margin-bottom: 1.5rem
+        }
+
         .track-list {
             list-style: none;
 
@@ -75,10 +79,55 @@
                 gap: 18px;
                 margin: 0 0 1.5rem;
 
+                .track-list__img-bg {
+                    width: 30px;
+                    height: 30px;
+                    background: linear-gradient(90deg, rgba(238, 9, 121, 1) 0%, rgba(255, 106, 0, 1) 100%);
+                    border-radius: 50%;
+                    place-self: center;
+
+                    .track-list__img {
+                        padding: 10px 12px;
+                    }
+                }
+
                 .track-list__track-text {
                     display: grid;
                     grid-template-columns: 1fr auto;
                     grid-template-rows: 1fr 1fr;
+                    text-decoration: none;
+
+                    .track-list__track-name {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $primary-color;
+                    }
+
+                    .track-list__track-artist {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                        font-weight: 100;
+                        color: $primary-color;
+                        grid-column: 1;
+                        grid-row: 2;
+                        align-self: end;
+
+                    }
+
+                    .track-list__numOfTracks {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                        font-weight: 100;
+                        color: $primary-color;
+                        place-self: center;
+                        grid-column: 2;
+                        grid-row: span 2;
+                    }
+
                 }
             }
         }

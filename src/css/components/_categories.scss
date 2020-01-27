@@ -18,11 +18,14 @@
             padding: 1.0625rem 1.5rem;
             margin: 1rem 0;
             border-radius: 8px;
-            color: #fff;
+            color: var(--primary-color);
             font-weight: bold;
             text-transform: capitalize;
             letter-spacing: 2px;
 
+            .genre-heading {
+                color: #fff;
+            }
         }
 
         .sub-genre-list {
@@ -33,12 +36,13 @@
                 display: flex;
                 justify-content: space-between;
 
+
                 .sub-genre-list__text {
                     font-size: 15px;
                     font-weight: 300;
                     text-transform: capitalize;
                     letter-spacing: 2px;
-
+                    color: var(--secondary-color);
                 }
             }
         }
