@@ -1,4 +1,6 @@
-function generatePage() {
+(async function () {
+    const data = await apiLink('https://api.spotify.com/v1/browse/featured-playlists');
+
 
     data.playlists.items.forEach(element => {
         //console.log(element)
@@ -15,5 +17,4 @@ function generatePage() {
         container.appendChild(clone)
         return
     });
-}
-apiLink('https://api.spotify.com/v1/browse/featured-playlists')
+})()

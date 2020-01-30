@@ -1,0 +1,60 @@
+.spinner {
+
+    width: 150px;
+    height: 150px;
+    border: dotted 10px white;
+    border-radius: 50%;
+    border-right-color: transparent;
+    animation: spinner 2s infinite forwards;
+    animation-timing-function: linear;
+    margin: 300px auto;
+}
+
+@keyframes spinner {
+    0% {
+        border-top-color: white;
+        border-right-color: transparent;
+        transform: rotateZ(45deg);
+
+    }
+
+    12.5% {
+        transform: rotateZ(90deg);
+    }
+
+    25% {
+        border-right-color: white;
+        border-bottom-color: transparent;
+        transform: rotateZ(135deg);
+    }
+
+    37.5% {
+        transform: rotateZ(180deg);
+    }
+
+    50% {
+        border-bottom-color: white;
+        border-left-color: transparent;
+        transform: rotateZ(225deg);
+    }
+
+    62.5% {
+        transform: rotateZ(270deg);
+    }
+
+    75% {
+        border-left-color: white;
+        border-top-color: transparent;
+        transform: rotateZ(315deg);
+    }
+
+    87.5% {
+        transform: rotateZ(340deg);
+    }
+
+    100% {
+        border-top-color: white;
+        transform: rotateZ(360deg);
+
+    }
+}

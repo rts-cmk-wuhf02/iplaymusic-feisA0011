@@ -1,4 +1,5 @@
 <%- include("../partials/head.ejs") %>
+<title>Categories</title>
 <%- include("../partials/nav.ejs") %>
 
 <main>
@@ -8,14 +9,6 @@
             <!-- <li class="category-list__item">
                 <div class="genre-container">
                     <p class="genre-heading">Alternative</p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
-            </li>
-            <li class="category-list__item">
-                <div class="genre-container">
-                    <p class="genre-heading">Blues</p>
                     <div>
                         <img class='more' src="/assets/images/ionmore.svg" alt="more">
                     </div>
@@ -33,133 +26,11 @@
                         </div>
 
                     </li>
-                    <li class="sub-genre-list__item">
-                        <div class="sub-genre-container">
-                            <p class="sub-genre-list__text">
-                                Blues Rock</p>
-                            <div>
-                                <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg"
-                                    alt="more">
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="sub-genre-list__item">
-                        <div class="sub-genre-container">
-                            <p class="sub-genre-list__text">
-                                Canadian Blues</p>
-                            <div>
-                                <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg"
-                                    alt="more">
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="sub-genre-list__item">
-                        <div class="sub-genre-container">
-                            <p class="sub-genre-list__text">
-                                Jazz Blues</p>
-                            <div>
-                                <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg"
-                                    alt="more">
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="sub-genre-list__item">
-                        <div class="sub-genre-container">
-                            <p class="sub-genre-list__text">
-                                Piano Blues</p>
-                            <div>
-                                <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg"
-                                    alt="more">
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="sub-genre-list__item">
-                        <div class="sub-genre-container">
-                            <p class="sub-genre-list__text">
-                                Soul Blues</p>
-                            <div>
-                                <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg"
-                                    alt="more">
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="sub-genre-list__item">
-                        <div class="sub-genre-container">
-                            <p class="sub-genre-list__text">
-                                Swamp Blues</p>
-                            <div>
-                                <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg"
-                                    alt="more">
-                            </div>
-
-                        </div>
-                    </li>
                 </ul>
-            </li>
-            <li class="category-list__item">
-                <div class="genre-container">
-                    <p class="genre-heading">Classical</p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
-            </li>
-            <li class="category-list__item">
-
-                <div class="genre-container">
-                    <p class="genre-heading">Country</p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
-            </li>
-            <li class="category-list__item">
-                <div class="genre-container">
-                    <p class="genre-heading">Dance</p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
-            </li>
-            <li class="category-list__item">
-                <div class="genre-container">
-                    <p class="genre-heading">Electronics</p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
-            </li>
-            <li class="category-list__item">
-                <div class="genre-container">
-                    <p class="genre-heading">Fitness & Workout</p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
-            </li>
-            <li class="category-list__item">
-                <div class="genre-container">
-                    <p class="genre-heading">Hip-Hop/rap</p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
-            </li>
-            <li class="category-list__item">
-                <div class="genre-container">
-                    <p class="genre-heading">Industrial </p>
-                    <div>
-                        <img class='more' src="/assets/images/ionmore.svg" alt="more">
-                    </div>
-                </div>
             </li> -->
-
         </ul>
+
+
 
     </article>
 </main>
@@ -171,6 +42,34 @@
                 <img class='more' src="/assets/images/ionmore.svg" alt="more">
             </div>
         </div>
+        <ul class="subCat-list">
+            <!-- <li class="sub-genre-list__item">
+                <div class="sub-genre-container">
+                    <p class="sub-genre-list__text">
+                        Acoustic Blues</p>
+                    <div>
+                        <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg" alt="more">
+                    </div>
+
+                </div>
+
+            </li> -->
+
+        </ul>
+    </li>
+</template>
+
+<template id="sub-category-template">
+    <li class="sub-genre-list__item">
+        <a class="sub-genre-list__link" href="">
+            <div class="sub-genre-container">
+                <p class="sub-genre-list__text">
+                    Acoustic Blues</p>
+                <div>
+                    <img class='sub-genre-list__arrow-forward' src="/assets/images/arrow-forward.svg" alt="more">
+                </div>
+            </div>
+        </a>
     </li>
 </template>
 

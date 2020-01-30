@@ -1,16 +1,25 @@
 const clientId = "c35706ff80f749c1b51a1ee385ca2f9b";
 const clientSecret = "18a64a36b7f34c5a8660bf463e2dd509";
+const param = new URLSearchParams(window.location.search);
 const key = btoa(clientId + ":" + clientSecret);
 console.log(key)
 let accessToken;
 
+const observer = new IntersectionObserver(entries => {
+    console.log(entries)
+})
+
 async function apiLink(url) {
     accessToken = await getToken();
     data = await pageData(url);
-    generatePage()
+    return data;
+    /* generatePage() */
 
 
 }
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.nav-list__heading').textContent = document.title;
+})
 
 function pageData(url) {
     return fetch(url, {

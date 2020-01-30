@@ -1,4 +1,5 @@
 <%- include("../partials/head.ejs") %>
+<title>Album Details</title>
 <%- include("../partials/nav.ejs") %>
 
 <main>
@@ -13,8 +14,8 @@
                     <h5 class="genre-hashtag-heading">Genre hashtags</h5>
                     <div class="hashtags">
 
-                        <a href="" class="first-hashtag">#country</a>
-                        <a href="" class="first-hashtag">#country road</a>
+                        <a href="" class="first-hashtag"></a>
+                        <a href="" class="second-hashtag"></a>
                     </div>
                 </section>
             </div>
@@ -26,7 +27,7 @@
             <h4 class="track-list__sub-heading">All Songs</h4>
 
             <ul class="track-list">
-                <li class="track-list__items">
+                <!--  <li class="track-list__items">
                     <figure class="track-list__img-bg">
                         <img class="track-list__img" src="/assets/images/ionplay.svg" alt=""
                             class="track-list__track-cover">
@@ -43,7 +44,7 @@
 
                         <a class="track-list__numOfTracks" href="">12 tracks</a>
                     </article>
-                </li>
+                </li> -->
                 <!--            <li class="track-list__items">
                     <figure>
                         <img class="track-list__img" src="/assets/images/ionplay.svg" alt=""
@@ -84,9 +85,26 @@
 
         </section>
     </article>
-
-
 </main>
+<template id="albumDetailTemplate">
+    <li class="track-list__items">
+        <figure class="track-list__img-bg">
+            <img class="track-list__img" src="/assets/images/ionplay.svg" alt="" class="track-list__track-cover">
+
+        </figure>
+        <article class="track-list__track-text">
+
+            <a class="track-list__track-name" href="">track name</a>
+
+
+
+
+            <a class="track-list__track-artist" href="">Artist</a>
+
+            <a class="track-list__length" href="">12 tracks</a>
+        </article>
+    </li>
+</template>
 <%- include("../partials/footer-nav.ejs") %>
 <%- include("../partials/after-footer.ejs") %>
 <script src="/assets/javascript/albumDetails.js"></script>

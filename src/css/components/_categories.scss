@@ -28,9 +28,18 @@
             }
         }
 
-        .sub-genre-list {
+        // .subCat-list {
+        //     display: none;
+        // }
+
+        .sub-genre-list__link {
+            text-decoration: none;
+        }
+
+        .subCat-list {
             margin: 1.6rem;
             list-style: none;
+            display: none;
 
             .sub-genre-container {
                 display: flex;

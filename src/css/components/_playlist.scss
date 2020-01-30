@@ -24,8 +24,14 @@
             padding-bottom: 1rem;
             place-content: center;
 
-            .slider-img {
+            .slider-img,
+            .slider-img__1 {
                 border-radius: 4px;
+            }
+
+            .slider-img__1 {
+                width: 155px;
+                height: 155px;
             }
 
             .slider-img:first-child,
@@ -77,6 +83,9 @@
                         font-size: 15px;
                         font-weight: 600;
                         color: $primary-color;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
 
                     .play-list__play-artist {

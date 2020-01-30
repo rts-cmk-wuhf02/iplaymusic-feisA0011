@@ -29,4 +29,6 @@ function switchTheme(e) {
     }
 }
 
-toggle.addEventListener('click', switchTheme, false);
+if (toggle) {
+    toggle.addEventListener('click', switchTheme, false);
+}
